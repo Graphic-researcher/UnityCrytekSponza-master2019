@@ -277,6 +277,7 @@ public class CommonSet : MonoBehaviour{
         if (renderTex)
         {
             renderTex.Release();
+            
 #if UNITY_EDITOR
             DestroyImmediate(renderTex);
 #else

@@ -1970,6 +1970,24 @@ MonoBehaviour:
       cloudDensity: 0.36
       cloudSpeed: 0.5
       cloudDirection: {x: 0, y: 0}
+      stochasticScreenSpaceReflection: 0
+      rayCastingResolution: 1
+      reflectionResolution: 1
+      ssrMaxDistance: 100
+      brdfBias: 0.7
+      rayCastThickness: 1
+      screenFade: 0.1
+      rayNum: 1
+      rayCastStepNum: 70
+      hiZMaxLevel: 10
+      ssrNoiseTex: {fileID: 0}
+      preintegratedGFTex: {fileID: 0}
+      resolverNum: 6
+      temporalScale: 1.25
+      temporalWeight: 0.98
+      smoothnessStrength: 0
+      specularStrength: 1
+      ssrCombine: 1
     uberMaterial: {fileID: 0}
 --- !u!1 &6417930426366783903
 GameObject:
@@ -2032,6 +2050,7 @@ MonoBehaviour:
   alphaPass: {fileID: 0}
   uberPass: {fileID: 0}
   distortionPass: {fileID: 0}
+  editorDebug: 0
   isSupportHalf: 1
   isSupportDepthTex: 1
   isSupportMRT: 1
@@ -4391,6 +4410,24 @@ MonoBehaviour:
       cloudDensity: 0.212
       cloudSpeed: 0.5
       cloudDirection: {x: 1, y: 0}
+      stochasticScreenSpaceReflection: 0
+      rayCastingResolution: 1
+      reflectionResolution: 1
+      ssrMaxDistance: 100
+      brdfBias: 0.7
+      rayCastThickness: 1
+      screenFade: 0.1
+      rayNum: 1
+      rayCastStepNum: 70
+      hiZMaxLevel: 10
+      ssrNoiseTex: {fileID: 0}
+      preintegratedGFTex: {fileID: 0}
+      resolverNum: 6
+      temporalScale: 1.25
+      temporalWeight: 0.98
+      smoothnessStrength: 0
+      specularStrength: 1
+      ssrCombine: 1
     uberMaterial: {fileID: 0}
 --- !u!1 &6417930427276096277
 GameObject:
@@ -6361,4 +6398,22 @@ MonoBehaviour:
       cloudDensity: 0.36
       cloudSpeed: 0.5
       cloudDirection: {x: 0, y: 0}
+      stochasticScreenSpaceReflection: 0
+      rayCastingResolution: 1
+      reflectionResolution: 1
+      ssrMaxDistance: 100
+      brdfBias: 0.7
+      rayCastThickness: 1
+      screenFade: 0.1
+      rayNum: 1
+      rayCastStepNum: 70
+      hiZMaxLevel: 10
+      ssrNoiseTex: {fileID: 0}
+      preintegratedGFTex: {fileID: 0}
+      resolverNum: 6
+      temporalScale: 1.25
+      temporalWeight: 0.98
+      smoothnessStrength: 0
+      specularStrength: 1
+      ssrCombine: 1
     uberMaterial: {fileID: 0}

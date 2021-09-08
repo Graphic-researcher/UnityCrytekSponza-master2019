@@ -1968,6 +1968,24 @@ MonoBehaviour:
       cloudDensity: 0.277
       cloudSpeed: 0.5
       cloudDirection: {x: 0, y: 0}
+      stochasticScreenSpaceReflection: 0
+      rayCastingResolution: 1
+      reflectionResolution: 1
+      ssrMaxDistance: 100
+      brdfBias: 0.7
+      rayCastThickness: 1
+      screenFade: 0.1
+      rayNum: 1
+      rayCastStepNum: 70
+      hiZMaxLevel: 10
+      ssrNoiseTex: {fileID: 0}
+      preintegratedGFTex: {fileID: 0}
+      resolverNum: 6
+      temporalScale: 1.25
+      temporalWeight: 0.98
+      smoothnessStrength: 0
+      specularStrength: 1
+      ssrCombine: 1
     uberMaterial: {fileID: 2100000, guid: e2d3492012aa882448d251ac9433da7f, type: 2}
 --- !u!1 &1370892530027733192
 GameObject:
@@ -3937,6 +3955,24 @@ MonoBehaviour:
       cloudDensity: 0.277
       cloudSpeed: 0.5
       cloudDirection: {x: 0, y: 0}
+      stochasticScreenSpaceReflection: 0
+      rayCastingResolution: 1
+      reflectionResolution: 1
+      ssrMaxDistance: 100
+      brdfBias: 0.7
+      rayCastThickness: 1
+      screenFade: 0.1
+      rayNum: 1
+      rayCastStepNum: 70
+      hiZMaxLevel: 10
+      ssrNoiseTex: {fileID: 0}
+      preintegratedGFTex: {fileID: 0}
+      resolverNum: 6
+      temporalScale: 1.25
+      temporalWeight: 0.98
+      smoothnessStrength: 0
+      specularStrength: 1
+      ssrCombine: 1
     uberMaterial: {fileID: 2100000, guid: 42cb5db0192aef643969f47c06b382a8, type: 2}
 --- !u!1 &1370892530465367771
 GameObject:
@@ -4002,6 +4038,7 @@ MonoBehaviour:
   alphaPass: {fileID: 0}
   uberPass: {fileID: 0}
   distortionPass: {fileID: 0}
+  editorDebug: 0
   isSupportHalf: 1
   isSupportDepthTex: 1
   isSupportMRT: 1
@@ -6158,6 +6195,24 @@ MonoBehaviour:
       cloudDensity: 0.277
       cloudSpeed: 0.5
       cloudDirection: {x: 0, y: 0}
+      stochasticScreenSpaceReflection: 0
+      rayCastingResolution: 1
+      reflectionResolution: 1
+      ssrMaxDistance: 100
+      brdfBias: 0.7
+      rayCastThickness: 1
+      screenFade: 0.1
+      rayNum: 1
+      rayCastStepNum: 70
+      hiZMaxLevel: 10
+      ssrNoiseTex: {fileID: 0}
+      preintegratedGFTex: {fileID: 0}
+      resolverNum: 6
+      temporalScale: 1.25
+      temporalWeight: 0.98
+      smoothnessStrength: 0
+      specularStrength: 1
+      ssrCombine: 1
     uberMaterial: {fileID: 2100000, guid: e25b46b16bc1ab346a0ee0ba91a389d3, type: 2}
 --- !u!1 &5445264253526460375
 GameObject:
@@ -8311,4 +8366,22 @@ MonoBehaviour:
       cloudDensity: 0.277
       cloudSpeed: 0.5
       cloudDirection: {x: 0, y: 0}
+      stochasticScreenSpaceReflection: 0
+      rayCastingResolution: 1
+      reflectionResolution: 1
+      ssrMaxDistance: 100
+      brdfBias: 0.7
+      rayCastThickness: 1
+      screenFade: 0.1
+      rayNum: 1
+      rayCastStepNum: 70
+      hiZMaxLevel: 10
+      ssrNoiseTex: {fileID: 0}
+      preintegratedGFTex: {fileID: 0}
+      resolverNum: 6
+      temporalScale: 1.25
+      temporalWeight: 0.98
+      smoothnessStrength: 0
+      specularStrength: 1
+      ssrCombine: 1
     uberMaterial: {fileID: 2100000, guid: fc5e681cc5cad324286889a92c83cbd8, type: 2}
