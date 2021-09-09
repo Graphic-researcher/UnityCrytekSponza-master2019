@@ -63,7 +63,8 @@ public static class GraphicsUtility
         buffer.DrawMesh(mesh, Matrix4x4.identity, mat, 0, pass);
     }//Use This
 
-    public static void BlitStencil(this CommandBuffer buffer, RenderTargetIdentifier colorSrc, RenderTargetIdentifier colorBuffer, RenderTargetIdentifier depthStencilBuffer, Material mat, int pass) {
+    public static void BlitStencil(this CommandBuffer buffer, RenderTargetIdentifier colorSrc, RenderTargetIdentifier colorBuffer, RenderTargetIdentifier depthStencilBuffer, Material mat, int pass)
+    {
         buffer.SetGlobalTexture(ShaderIDs._MainTex, colorSrc);
         buffer.SetRenderTarget(colorBuffer, depthStencilBuffer);
         buffer.DrawMesh(mesh, Matrix4x4.identity, mat, 0, pass);

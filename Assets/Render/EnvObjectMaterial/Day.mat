@@ -9,8 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Day
   m_Shader: {fileID: 4800000, guid: f84d81e8589aad340a45105a14d3c634, type: 3}
-  m_ShaderKeywords: ALPHABLOOM BLOOM COLORLOOKUP DISTORTION PLAYER PLAYERBLOOM PLAYERCOLORLOOKUP
-    VIGNETTESCENE
+  m_ShaderKeywords: ALPHABLOOM BLOOM DISTORTION PLAYER PLAYERBLOOM VIGNETTESCENE
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
