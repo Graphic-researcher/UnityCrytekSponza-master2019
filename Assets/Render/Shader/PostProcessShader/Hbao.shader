@@ -34,7 +34,7 @@
 		float _MaxRadiusPixels;
 		float _AORadius;
 		float _AOIntensity;
-		float _AngleBias;
+		float _AngleBias;//解决Low-Tessellation,在切面角加一个偏移量
 		float _NegInvRadius2;
 		float _AOmultiplier;
 		float _MaxDistance;
@@ -85,6 +85,7 @@
 				#pragma vertex vert
 				#pragma fragment frag_ao
 
+				//分三个方向步进
 				#define DIRECTIONS		3
 				#define STEPS			2
 				#include "hbao.cginc"
@@ -98,8 +99,9 @@
 
 				#pragma vertex vert
 				#pragma fragment frag_ao
-
+				//分四个方向步进
 				#define DIRECTIONS		4
+				//光线步进次数
 				#define STEPS			3
 				#include "hbao.cginc"
 
@@ -112,7 +114,7 @@
 
 				#pragma vertex vert
 				#pragma fragment frag_ao
-
+				//分六个方向步进
 				#define DIRECTIONS		6
 				#define STEPS			4
 				#include "hbao.cginc"
@@ -126,7 +128,7 @@
 
 				#pragma vertex vert
 				#pragma fragment frag_ao
-
+				//分八个方向步进
 				#define DIRECTIONS		8
 				#define STEPS			4
 				#include "hbao.cginc"

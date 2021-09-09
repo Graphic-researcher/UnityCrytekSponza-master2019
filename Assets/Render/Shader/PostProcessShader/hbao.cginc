@@ -70,11 +70,11 @@ half4 frag_ao(v2f i, UNITY_VPOS_TYPE screenPos : VPOS) : SV_Target {
 	
 
 	//float3 P = FetchViewPos(i.uv2,depthNormal.zw);
-	float3 P = FetchViewPos(i.uv2);
+	float3 P = FetchViewPos(i.uv2);//当前点
 
 	clip(_MaxDistance - P.z);
 	
-	float stepSize = min((_AORadius / P.z), 128) / (STEPS + 1.0);
+	float stepSize = min((_AORadius / P.z), 128) / (STEPS + 1.0);//光线步进步长
 
 	// (cos(alpha), sin(alpha), jitter)
 	float3 rand = tex2D(_NoiseTex, screenPos.xy / 4.0).rgb;
@@ -100,14 +100,14 @@ half4 frag_ao(v2f i, UNITY_VPOS_TYPE screenPos : VPOS) : SV_Target {
 	float ao = 0;
 
 	UNITY_UNROLL
-	for (int d = 0; d < DIRECTIONS; ++d) {
-		float2 direction = RotateDirections(Directions[d], rand.xy);
+	for (int d = 0; d < DIRECTIONS; ++d) {//对各方向
+		float2 direction = RotateDirections(Directions[d], rand.xy);//随机旋转角度
 
 		// Jitter starting sample within the first step
 		float rayPixels = (rand.z * stepSize + 1.0);
 
 		UNITY_UNROLL
-		for (int s = 0; s < STEPS; ++s) {
+		for (int s = 0; s < STEPS; ++s) {//进行光线步进
 
 			float2 snappedUV = round(rayPixels * direction) * InvScreenParams  + i.uv2;
 			
@@ -126,7 +126,7 @@ half4 frag_ao(v2f i, UNITY_VPOS_TYPE screenPos : VPOS) : SV_Target {
 		
 	ao *= (_AOmultiplier / (STEPS * DIRECTIONS));
 
-	ao = saturate(1.0 - ao);
+	ao = saturate(1.0 - ao);//衰减公式,解决AO差值过大的不连续问题
 	
 	return half4(ao, 0,0,1);
 }
