@@ -22,7 +22,7 @@ Shader "Hidden/GroundTruthAmbientOcclusion"
 
 		Pass 
 		{ 
-			//////1
+			//////1 升采样生成AO
 			Name" UpsamplingGTAO"
 			CGPROGRAM 
 				#pragma vertex vert
@@ -32,7 +32,7 @@ Shader "Hidden/GroundTruthAmbientOcclusion"
 
 		Pass 
 		{ 
-			//////2
+			//////2 滤波
 			Name"SpatialGTAO_X"
 			CGPROGRAM 
 				#pragma vertex vert
@@ -42,7 +42,7 @@ Shader "Hidden/GroundTruthAmbientOcclusion"
 
 		Pass 
 		{ 
-			//////3
+			//////3 滤波
 			Name"SpatialGTAO_Y"
 			CGPROGRAM 
 				#pragma vertex vert
@@ -52,7 +52,7 @@ Shader "Hidden/GroundTruthAmbientOcclusion"
 
 		Pass 
 		{ 
-			//////4
+			//////4 Temporal滤波
 			Name"TemporalGTAO"
 			CGPROGRAM 
 				#pragma vertex vert
