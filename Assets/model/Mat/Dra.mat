@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Dra
   m_Shader: {fileID: 4800000, guid: 6ee5791a084c6724392a812fccf158a3, type: 3}
-  m_ShaderKeywords: _PLAYER _RECEIVEFOG
+  m_ShaderKeywords: _RECEIVEFOG
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -75,20 +75,18 @@ Material:
     - _ExtendAlpha: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
-    - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _MoveRandom: 5
-    - _MoveRange: 0.27
+    - _MoveRange: 0.2
     - _MoveRate: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Player: 1
+    - _Player: 0
     - _ReceiveFog: 1
     - _RimEnable: 0
     - _RimPower: 5
     - _SmoothnessTextureChannel: 0
-    - _SpecularHighlights: 1
     - _SrcAlpha: 1
     - _SrcBlend: 1
     - _UVAnimation: 0
@@ -104,4 +102,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor1: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
-    - _VertexColor: {r: 1, g: 0.27279758, b: 0, a: 1}
+    - _VertexColor: {r: 1, g: 1, b: 1, a: 1}
